@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chez Nestor Trello Addon",
+  "description": "Improves Trello and other internal tools for our use-cases",
+  "version": "1.0.0",
+  "content_scripts": [{
+    // TODO: find what goes here
+  }],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Chez Nestor"
+  },
+  "permissions": [
+    // TODO: find what goes here
+  ]
+}
