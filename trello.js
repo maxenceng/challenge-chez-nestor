@@ -12,3 +12,9 @@ function delegate(eventName, selector, fn) {
   // Use capture phase
   }, true);
 }
+
+const test = (event, closest) => {
+  console.log(event, closest);
+}
+
+delegate('click', '.icon-overflow-menu-horizontal', test);
