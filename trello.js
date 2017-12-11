@@ -19,7 +19,7 @@ function delegate(eventName, selector, fn) {
  * @param {[type]} closest
  */
 const addElem = (event, closest) => {
-  console.log(typeof event, typeof closest)
+  console.log(closest)
   setTimeout(() => {
     const selector = $('.pop-over-list')
     selector.append(`
@@ -32,6 +32,13 @@ const addElem = (event, closest) => {
 
 const copyToClipboard = (event, closest) => {
   console.log(event, closest)
+  const test = $(event.target).closest('.list')
+  console.log($('.copy').parent())
+}
+
+const test = (event, closest) => {
+  console.log(event, closest)
+  console.log(closest.attr('.list-header'))
 }
 
 delegate('click', '.list-header-extras', addElem)
